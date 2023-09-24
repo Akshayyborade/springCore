@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- this is our beans -->
+	<bean class="spring.springCore.collection.Person" name="person1">
+		<property name="name">
+			<value>Akshay</value>
+		</property>
+		<property name="contacts">
+			<list>
+				<value>456123</value>
+				<value>854216</value>
+			</list>
+		</property>
+		<property name="address">
+			<set>
+				<value>ware</value>
+				<value>pohi</value>
+			</set>
+		</property>
+		<property name="course">
+			<map>
+				<entry key="math" value="1month"></entry>
+			</map>
+		</property>
+
+	</bean>
+
+
+</beans>
