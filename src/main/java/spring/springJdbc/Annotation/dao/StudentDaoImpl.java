@@ -1,11 +1,14 @@
 package spring.springJdbc.Annotation.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 
-import spring.springJdbc.DesignJdbc.entity.Student;
-
+import spring.springJdbc.Annotation.entity.Student;
+@Component
 public class StudentDaoImpl implements StudentDao {
-    private JdbcTemplate jdbcTemplate;
+    @Autowired
+	private JdbcTemplate jdbcTemplate;
 
 	public JdbcTemplate getJdbcTemplate() {
 		return jdbcTemplate;
